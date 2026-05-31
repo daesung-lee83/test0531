@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>실시간 날씨 정보</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="weather-container">
         <div class="header">
-            <h2>현재 위치 날씨</h2>
-            <p id="time-info">업데이트 중...</p>
+            <h2>현재 날씨 실황</h2>
+            
+            <div class="location-box">
+                <div class="loc-name">
+                    <i class="fas fa-map-marker-alt"></i> 서울특별시 강남구
+                </div>
+                <div class="loc-grid">
+                    (격자: X <span id="grid-x">61</span>, Y <span id="grid-y">127</span>)
+                </div>
+            </div>
+
+            <p id="time-info">데이터를 불러오는 중...</p>
         </div>
         
         <div class="main-weather">
             <i id="weather-icon" class="fas fa-spinner fa-spin"></i>
             <h1 id="temperature">--°C</h1>
-            <p id="weather-desc">상태 확인 중</p>
+            <p id="weather-desc">준비 중</p>
         </div>
 
         <div class="details">
